@@ -43,7 +43,7 @@ pipeline {
 
           buildInfo = rtMaven.run pom: 'pom.xml', goals: "clean install -Dlicense.skip=true"
           buildInfo.env.capture = true
-          buildInfo.name = 'jpetstore-6'
+          buildInfo.name = 'hello-world'
           server.publishBuildInfo buildInfo
         }
 
